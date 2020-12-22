@@ -1,0 +1,17 @@
+<?php
+
+namespace LaravelSferaTemplate\Exceptions;
+
+use LaravelSferaTemplate\Http\ApiResponse;
+use Illuminate\Http\JsonResponse;
+
+class NotFoundException extends \Exception
+{
+    /**
+     * @return JsonResponse
+     */
+    public function render()
+    {
+        return ApiResponse::errorResponse(404);
+    }
+}

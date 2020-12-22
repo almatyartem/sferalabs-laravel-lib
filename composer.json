@@ -1,0 +1,20 @@
+{
+    "name": "d3sw/laravel-sfera-template",
+    "description": "Laravel Sfera template",
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "laravel/framework": "^8.12",
+        "spatie/data-transfer-object": "^2.6"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "classmap": [
+            "src"
+        ],
+        "psr-4": {
+            "LaravelSferaTemplate\\": "src/"
+        }
+    }
+}
