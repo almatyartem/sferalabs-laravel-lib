@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelSferaTemplate\Contracts;
+namespace LaravelSferaLibrary\Contracts;
 
-use LaravelSferaTemplate\Http\GridApiRequest;
+use LaravelSferaLibrary\Http\GridApiRequest;
 use Illuminate\Http\JsonResponse;
 
 interface BaseGridContract

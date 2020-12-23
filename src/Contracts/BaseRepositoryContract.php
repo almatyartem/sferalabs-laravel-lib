@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelSferaTemplate\Contracts;
+namespace LaravelSferaLibrary\Contracts;
 
-use LaravelSferaTemplate\Exceptions\NotFoundException;
-use LaravelSferaTemplate\Exceptions\ValidationException;
-use LaravelSferaTemplate\Db\BaseEntity;
+use LaravelSferaLibrary\Exceptions\NotFoundException;
+use LaravelSferaLibrary\Exceptions\ValidationException;
+use LaravelSferaLibrary\Db\BaseEntity;
 
 interface BaseRepositoryContract
 {

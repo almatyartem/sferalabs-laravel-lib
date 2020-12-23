@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelSferaTemplate\Db\DbDataProviders\Eloquent;
+namespace LaravelSferaLibrary\Db\DbDataProviders\Eloquent;
 
 use Illuminate\Database\Eloquent\Builder;
-use LaravelSferaTemplate\Contracts\QueryBuilderContract;
+use LaravelSferaLibrary\Contracts\QueryBuilderContract;
 
 class ExtendedBuilder extends Builder implements QueryBuilderContract
 {

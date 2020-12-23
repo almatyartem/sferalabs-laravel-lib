@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelSferaTemplate\Contracts;
+namespace LaravelSferaLibrary\Contracts;
 
 interface DbDataProvidersFactoryContract
 {

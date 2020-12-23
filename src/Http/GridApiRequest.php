@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelSferaTemplate\Http;
+namespace LaravelSferaLibrary\Http;
 
 class GridApiRequest extends ApiRequest
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace LaravelSferaTemplate\Db\DbDataProviders\Eloquent;
+namespace LaravelSferaLibrary\Db\DbDataProviders\Eloquent;
 
-use LaravelSferaTemplate\Db\BaseEntity;
-use LaravelSferaTemplate\Db\Relations\BaseRelation;
-use LaravelSferaTemplate\Db\Relations\BelongsToManyRelation;
-use LaravelSferaTemplate\Db\Relations\BelongsToRelation;
-use LaravelSferaTemplate\Db\Relations\HasManyRelation;
-use LaravelSferaTemplate\Db\Relations\HasOneRelation;
+use LaravelSferaLibrary\Db\BaseEntity;
+use LaravelSferaLibrary\Db\Relations\BaseRelation;
+use LaravelSferaLibrary\Db\Relations\BelongsToManyRelation;
+use LaravelSferaLibrary\Db\Relations\BelongsToRelation;
+use LaravelSferaLibrary\Db\Relations\HasManyRelation;
+use LaravelSferaLibrary\Db\Relations\HasOneRelation;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

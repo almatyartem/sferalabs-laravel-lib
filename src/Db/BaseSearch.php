@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelSferaTemplate\Db;
+namespace LaravelSferaLibrary\Db;
 
-use LaravelSferaTemplate\Contracts\QueryBuilderContract;
-use LaravelSferaTemplate\Contracts\BaseSearchContract;
-use LaravelSferaTemplate\Contracts\DbDataProviderContract;
+use LaravelSferaLibrary\Contracts\QueryBuilderContract;
+use LaravelSferaLibrary\Contracts\BaseSearchContract;
+use LaravelSferaLibrary\Contracts\DbDataProviderContract;
 
 abstract class BaseSearch implements BaseSearchContract
 {

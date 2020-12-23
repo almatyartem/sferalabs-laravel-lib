@@ -1,13 +1,13 @@
 <?php
 
-namespace LaravelSferaTemplate\Db\DbDataProviders\Eloquent;
+namespace LaravelSferaLibrary\Db\DbDataProviders\Eloquent;
 
 use Illuminate\Database\Eloquent\Model;
-use LaravelSferaTemplate\Contracts\DbDataProviderContract;
-use LaravelSferaTemplate\Contracts\QueryBuilderContract;
-use LaravelSferaTemplate\Db\BaseEntity;
-use LaravelSferaTemplate\Exceptions\NotFoundException;
-use LaravelSferaTemplate\Exceptions\ValidationException;
+use LaravelSferaLibrary\Contracts\DbDataProviderContract;
+use LaravelSferaLibrary\Contracts\QueryBuilderContract;
+use LaravelSferaLibrary\Db\BaseEntity;
+use LaravelSferaLibrary\Exceptions\NotFoundException;
+use LaravelSferaLibrary\Exceptions\ValidationException;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Validator;
 

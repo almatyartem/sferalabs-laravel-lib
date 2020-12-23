@@ -1,6 +1,6 @@
 {
-    "name": "d3sw/laravel-sfera-template",
-    "description": "Laravel Sfera template",
+    "name": "d3sw/laravel-sfera-library",
+    "description": "Common Laravel Sfera library",
     "require": {
         "php": "^7.4|^8.0",
         "ext-json": "*",
@@ -14,7 +14,7 @@
             "src"
         ],
         "psr-4": {
-            "LaravelSferaTemplate\\": "src/"
+            "LaravelSferaLibrary\\": "src/"
         }
     }
 }

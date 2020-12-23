@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelSferaTemplate\Db\DbDataProviders\Eloquent;
+namespace LaravelSferaLibrary\Db\DbDataProviders\Eloquent;
 
-use LaravelSferaTemplate\Contracts\DbDataProvidersFactoryContract;
+use LaravelSferaLibrary\Contracts\DbDataProvidersFactoryContract;
 
 class EloquentDbDataProvidersFactory implements DbDataProvidersFactoryContract
 {

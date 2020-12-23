@@ -1,12 +1,12 @@
 <?php
 
-namespace LaravelSferaTemplate\Db;
+namespace LaravelSferaLibrary\Db;
 
-use LaravelSferaTemplate\Db\Relations\BaseRelation;
-use LaravelSferaTemplate\Db\Relations\BelongsToManyRelation;
-use LaravelSferaTemplate\Db\Relations\BelongsToRelation;
-use LaravelSferaTemplate\Db\Relations\HasManyRelation;
-use LaravelSferaTemplate\Db\Relations\HasOneRelation;
+use LaravelSferaLibrary\Db\Relations\BaseRelation;
+use LaravelSferaLibrary\Db\Relations\BelongsToManyRelation;
+use LaravelSferaLibrary\Db\Relations\BelongsToRelation;
+use LaravelSferaLibrary\Db\Relations\HasManyRelation;
+use LaravelSferaLibrary\Db\Relations\HasOneRelation;
 use Spatie\DataTransferObject\DataTransferObject;
 use Spatie\DataTransferObject\FieldValidator;
 use Spatie\DataTransferObject\ValueCaster;

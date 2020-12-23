@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelSferaTemplate\Db;
+namespace LaravelSferaLibrary\Db;
 
-use LaravelSferaTemplate\Contracts\BaseRepositoryContract;
-use LaravelSferaTemplate\Exceptions\NotFoundException;
-use LaravelSferaTemplate\Exceptions\ValidationException;
-use LaravelSferaTemplate\Contracts\DbDataProviderContract;
+use LaravelSferaLibrary\Contracts\BaseRepositoryContract;
+use LaravelSferaLibrary\Exceptions\NotFoundException;
+use LaravelSferaLibrary\Exceptions\ValidationException;
+use LaravelSferaLibrary\Contracts\DbDataProviderContract;
 
 abstract class BaseRepository implements BaseRepositoryContract
 {

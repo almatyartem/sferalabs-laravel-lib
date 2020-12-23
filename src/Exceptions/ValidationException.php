@@ -1,8 +1,8 @@
 <?php
 
-namespace LaravelSferaTemplate\Exceptions;
+namespace LaravelSferaLibrary\Exceptions;
 
-use LaravelSferaTemplate\Http\ApiResponse;
+use LaravelSferaLibrary\Http\ApiResponse;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Contracts\Validation\Validator;
 

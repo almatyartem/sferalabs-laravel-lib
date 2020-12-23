@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelSferaTemplate\Db\Relations;
+namespace LaravelSferaLibrary\Db\Relations;
 
 class HasManyRelation extends BaseRelation
 {
