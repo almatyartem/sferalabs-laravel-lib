@@ -5,6 +5,11 @@ namespace LaravelSferaLibrary\Contracts;
 interface BaseSearchContract
 {
     /**
+     * @return string
+     */
+    public function getEntityClass() : string;
+
+    /**
      * @return mixed|null
      */
     public function find();
