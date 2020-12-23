@@ -9,6 +9,11 @@ use LaravelSferaLibrary\Db\BaseEntity;
 interface BaseRepositoryContract
 {
     /**
+     * @return string
+     */
+    public function getEntityClass() : string;
+
+    /**
      * @param int $id
      * @return BaseEntity|null
      */
