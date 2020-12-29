@@ -19,7 +19,7 @@ abstract class SearchOrRepositoryBaseServiceProvider extends ServiceProvider
             $this->app->when($implementation)
                 ->needs(DbDataProviderContract::class)
                 ->give(function () use ($factory, $implementation) {
-                    return $factory->getDataProviderByEntityClass($implementation->getEntityClass());
+                    return $factory->getDataProviderByEntityClass(call_user_func([$implementation, 'getEntityClass']));
                 });
         }
     }
