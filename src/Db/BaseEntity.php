@@ -61,14 +61,7 @@ abstract class BaseEntity extends DataTransferObject
      */
     public static function fromArray(array $data) : BaseEntity
     {
-        $DTO = new static();
-
-        foreach ($data as $key => $value) {
-            if (!is_null($value)) {
-                $DTO->{$key} = $value;
-            }
-        }
-        return $DTO;
+        return new static($data);
     }
 
     /**
