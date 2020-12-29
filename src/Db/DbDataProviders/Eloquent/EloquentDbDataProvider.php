@@ -97,10 +97,17 @@ class EloquentDbDataProvider implements DbDataProviderContract
     /**
      * @param int $id
      * @return bool
+     * @throws NotFoundException
      */
     public function delete(int $id) : bool
     {
-        return $this->eloquentModel->destroy($id);
+        $record = $this->eloquentModel->find($id);
+
+        if (!$record) {
+            throw new NotFoundException();
+        }
+
+        return $record->delete();
     }
 
     /**
