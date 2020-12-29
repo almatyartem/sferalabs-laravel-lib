@@ -91,6 +91,8 @@ abstract class BaseRepository implements BaseRepositoryContract
      */
     protected function createFromArray(array $data) : ?BaseEntity
     {
+        $data = $this->getOnlyDataWithRules($data);
+
         return $this->dbProvider->create($data);
     }
 
@@ -102,6 +104,17 @@ abstract class BaseRepository implements BaseRepositoryContract
      */
     protected function updateByArray(int $id, array $data) : ?BaseEntity
     {
+        $data = $this->getOnlyDataWithRules($data);
+
         return $this->dbProvider->update($id, $data);
+    }
+
+    /**
+     * @param array $data
+     * @return array
+     */
+    protected function getOnlyDataWithRules(array $data) : array
+    {
+        return array_intersect_key($data, call_user_func([static::getEntityClass(), 'getRules']));
     }
 }
