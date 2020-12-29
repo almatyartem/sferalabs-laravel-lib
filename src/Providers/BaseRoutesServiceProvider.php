@@ -52,10 +52,13 @@ abstract class BaseRoutesServiceProvider extends RouteServiceProvider
     }
 
     /**
-     * @param RouteData $routeData
+     * @param string $httpMethod
+     * @param string $uri
+     * @param string $controllerClass
+     * @param string $methodName
      */
-    protected function addRouteData(RouteData $routeData) : void
+    protected function addRouteData(string $httpMethod, string $uri, string $controllerClass, string $methodName) : void
     {
-        $this->routesData[] = $routeData;
+        $this->routesData[] = new RouteData($httpMethod, $uri, $controllerClass, $methodName);
     }
 }
