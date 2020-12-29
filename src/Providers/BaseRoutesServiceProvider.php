@@ -38,7 +38,7 @@ abstract class BaseRoutesServiceProvider extends RouteServiceProvider
     abstract function setRoutesData() : void;
 
     /**
-     * @return mixed
+     * @return void
      */
     function map()
     {
@@ -49,5 +49,13 @@ abstract class BaseRoutesServiceProvider extends RouteServiceProvider
                     $router->$method($routeData->uri, [$routeData->controllerClass, $routeData->methodName]);
                 }
             });
+    }
+
+    /**
+     * @param RouteData $routeData
+     */
+    protected function addRouteData(RouteData $routeData) : void
+    {
+        $this->routesData[] = $routeData;
     }
 }
