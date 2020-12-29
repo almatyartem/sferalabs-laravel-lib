@@ -7,7 +7,7 @@ interface BaseSearchContract
     /**
      * @return string
      */
-    public function getEntityClass() : string;
+    public static function getEntityClass() : string;
 
     /**
      * @return mixed|null

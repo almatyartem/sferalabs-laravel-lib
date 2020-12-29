@@ -11,7 +11,7 @@ interface BaseRepositoryContract
     /**
      * @return string
      */
-    public function getEntityClass() : string;
+    public static function getEntityClass() : string;
 
     /**
      * @param int $id
