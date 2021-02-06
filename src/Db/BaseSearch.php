@@ -37,13 +37,16 @@ abstract class BaseSearch implements BaseSearchContract
 
         return $this;
     }
-
-    /**
+/**
      * @return BaseEntity|null
      */
     public function first()
     {
-        return $this->dbDataProvider->first($this->builder);
+        $result = $this->dbDataProvider->first($this->builder);
+
+        $this->refresh();
+
+        return $result;
     }
 
     /**
@@ -51,7 +54,11 @@ abstract class BaseSearch implements BaseSearchContract
      */
     public function find() : ?array
     {
-        return $this->dbDataProvider->get($this->builder);
+        $result =  $this->dbDataProvider->get($this->builder);
+
+        $this->refresh();
+
+        return $result;
     }
 
     /**
