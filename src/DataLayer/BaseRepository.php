@@ -125,6 +125,9 @@ abstract class BaseRepository
         if($createdAt = $this->callEntity('getCreatedAtColumnName')){
             $data[$createdAt] = date('Y-m-d H:i:s');
         }
+        if($updatedAt = $this->callEntity('getUpdatedAtColumnName')){
+            $data[$updatedAt] = date('Y-m-d H:i:s');
+        }
 
         $id = DB::table($this->callEntity('getTable'))
             ->insertGetId($data);
